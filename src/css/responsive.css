@@ -23,6 +23,10 @@
   #defile {
     animation: none;
   }
+
+  #profile {
+    margin: 5em 3em;
+  }
 }
 
 /* REGION Tablet Landscape */
@@ -40,6 +44,18 @@
     width: 1vw;
     height: 1vw;
   }
+
+  #profile-title {
+    font-size: 29px;
+  }
+
+  .profile-description {
+    font-size: 20px;
+  }
+
+  #small-portrait {
+    height: 348px;
+  }
 }
 
 /* REGION Desktop */
@@ -49,12 +65,38 @@
   }
 
   #header-title {
-    font-size: 85px;
-    line-height: 115px;
+    font-size: 75px;
+    line-height: 95px;
   }
 
   #flx-anchor a {
     width: 15%;
+  }
+
+  #profile {
+    margin: 5em;
+    text-align: left;
+  }
+
+  #large-portrait {
+    display: block;
+    height: 75%;
+  }
+
+  #small-portrait {
+    display: none;
+  }
+}
+
+/* REGION Large Desktop */
+@media (min-width: 1496px) {
+  #header-title {
+    font-size: 85px;
+    line-height: 115px;
+  }
+
+  #profile {
+    margin: 5em 10em;
   }
 }
 
