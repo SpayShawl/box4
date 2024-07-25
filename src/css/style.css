@@ -68,7 +68,7 @@ header::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5em;
+  padding-bottom: 5em;
 }
 
 #flx-anchor a {
