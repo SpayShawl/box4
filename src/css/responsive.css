@@ -1,3 +1,10 @@
+/* REGION PHONE */
+@media (max-height: 405px) {
+  #flx-anchor {
+    padding-bottom: 2em;
+  }
+}
+
 /* REGION Tablet Portrait */
 @media (min-width: 600px) {
   #logo {
