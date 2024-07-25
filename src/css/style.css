@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+}
+
+/* REGION Header */
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('../../assets/bckg-header.webp');
+  background-size: cover;
+  background-position-x: 75%;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+#flx-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 190px;
+  align-self: center;
+  margin: 1em;
+}
+
+#header-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  text-transform: uppercase;
+  line-height: 45px;
+  margin: 0 0 0 0.75em;
+  font-size: 40px;
+}
+
+#header-title .red {
+  color: #FF0016;
+}
+
+#flx-anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+#flx-anchor a {
+  border-radius: 25px;
+  border: 2px solid #FF0016;
+  background-color: transparent;
+  width: 33%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #FF0016;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+#flx-anchor a:hover {
+  color: white;
+  background-color: #FF0016;
+}
+
+#flx-anchor .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flx-anchor .arrow span {
+    display: block;
+    width: 2vw;
+    height: 2vw;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+#flx-anchor .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+#flx-anchor .arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+/* ENDREGION Header */
+
+/* REGION Sponsor */
+@keyframes sponsordefile {
+  0% {
+    transform: translateX(-175%);
+  }
+
+  100% {
+    transform: translateX(175%);
+  }
+}
+
+#sponsor {
+  background-color: #FF0016;
+  padding: 0.5em 2em;
+  overflow-x: hidden;
+}
+
+#defile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  animation: sponsordefile 30s infinite linear;
+}
+
+#sponsor img {
+  height: 52px;
+}
+
+#sponsor #google {
+  height: 72px;
+}
+
+#sponsor #nike {
+  height: 62px;
+}
+
+#sponsor #samsung {
+  height: 72px;
+}
+/* ENREGION Sponsor */
+
+/* EGION Profile */
+#profile {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#profile-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+/* ENREGION Profile */

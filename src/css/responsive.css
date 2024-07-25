@@ -1,0 +1,53 @@
+/* REGION Tablet Portrait */
+@media (min-width: 600px) {
+  #logo {
+    width: 235px;
+  }
+
+  #header-title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  #flx-anchor a {
+    width: 20%;
+  }
+
+  #defile {
+    animation: none;
+  }
+}
+
+/* REGION Tablet Landscape */
+@media (min-width: 768px) {
+  #header-title {
+    font-size: 65px;
+    line-height: 85px;
+  }
+
+  #flx-anchor a {
+    width: 25%;
+  }
+
+  #flx-anchor .arrow span {
+    width: 1vw;
+    height: 1vw;
+  }
+}
+
+/* REGION Desktop */
+@media (min-width: 1024px) {
+  #logo {
+    width: 270px;
+  }
+
+  #header-title {
+    font-size: 85px;
+    line-height: 115px;
+  }
+
+  #flx-anchor a {
+    width: 15%;
+  }
+}
+
