@@ -9,6 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden
+}
+
+header {
+  margin: 0;
 }
 
 /* REGION Header */
@@ -26,23 +31,20 @@ body {
     }
 }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('../../assets/bckg-header.webp');
-  background-size: cover;
-  background-position-x: 75%;
-  filter: brightness(0.5);
-  z-index: -1;
-}
-
 #flx-header {
-  min-height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#backgound-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
 }
 
 #logo {
@@ -58,6 +60,7 @@ header::before {
   line-height: 45px;
   margin: 0 0 0 0.75em;
   font-size: 40px;
+  margin-top: 1em;
 }
 
 #header-title .red {
@@ -68,7 +71,7 @@ header::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
 }
 
 #flx-anchor a {
@@ -177,3 +180,81 @@ header::before {
   display: none;
 }
 /* ENREGION Profile */
+
+/* REGION Services */
+#services {
+  position: relative;
+  min-height: 100dvh;
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('../../assets/bckg_services.webp');
+  background-size: cover;
+  background-position-x: 75%;
+  filter: brightness(0.25);
+  z-index: -1;
+}
+/* ENDREGION Services */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300dvw;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  width: 100dvw;
+  height: 100dvh;
+  margin: 5%;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.content img {
+  border-radius: 50%;
+}
+
+.content h2 {
+  color: #FF0016;
+  margin: 1em;
+}
+
+.content p {
+  margin: 0;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}

@@ -27,6 +27,27 @@
   #profile {
     margin: 5em 3em;
   }
+
+  .carousel-control.prev {
+    left: 2em;
+  }
+  
+  .carousel-control.next {
+    right: 2em;
+  }
+
+  .content img {
+    width: 222px;
+    height: 222px;
+  }
+  
+  .content h2 {
+    font-size: 22px;
+  }
+  
+  .content p {
+    font-size: 18px;
+  }
 }
 
 /* REGION Tablet Landscape */
@@ -86,6 +107,32 @@
   #small-portrait {
     display: none;
   }
+
+  .carousel-inner {
+    width: 100vw;
+    transform: none!important;
+  }
+
+  .carousel-control {
+    display: none;
+  }
+
+  .content img {
+    width: 222px;
+    height: 222px;
+  }
+  
+  .content h2 {
+    font-size: 22px;
+  }
+  
+  .content p {
+    font-size: 18px;
+  }
+
+  .carousel-control {
+    display: none;
+  }
 }
 
 /* REGION Large Desktop */
@@ -98,5 +145,19 @@
   #profile {
     margin: 5em 10em;
   }
+
+  .content img {
+    width: 292px;
+    height: 292px;
+  }
+  
+  .content h2 {
+    font-size: 22px;
+  }
+  
+  .content p {
+    font-size: 20px;
+  }
+
 }
 
