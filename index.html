@@ -70,7 +70,7 @@
           la gestion de la présence médiatique pour des événements sportifs et culturels de grande envergure. 
         </p>
         <p class="profile-description">
-          De l'adrénaline des 48 heures du Mans à l'intensité du Hellfest, Overtake s'assure que chaque événement 
+          De l'adrénaline des 24 heures du Mans à l'intensité du Hellfest, Overtake s'assure que chaque événement 
           bénéficie d'une visibilité optimale à travers les médias et les réseaux sociaux. Mon expérience et 
           ma passion pour les sports extrêmes et la musique m'ont poussé à créer cette entreprise afin de connecter 
           les fans avec les événements qu'ils aiment. En tant que jeune entrepreneur, je me consacre entièrement à 
@@ -79,10 +79,10 @@
       </div>
     </section>
     <section id="services">
-      <h1>Prestations</h1>
+      <h1 id="services-title">Prestations</h1>
       <div class="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item">
+            <div class="carousel-item service-article">
               <div class="content">
                 <img src="https://picsum.photos/147/147">
                 <h2>Title 1</h2>
@@ -93,7 +93,7 @@
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item service-article">
               <div class="content">
                 <img src="https://picsum.photos/147/147">
                 <h2>Title 2</h2>
@@ -104,7 +104,7 @@
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item service-article">
               <div class="content">
                 <img src="https://picsum.photos/147/147">
                 <h2>Title 3</h2>
@@ -116,8 +116,85 @@
               </div>
             </div>
           </div>
-          <button type="button" class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-          <button type="button" class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+          <button type="button" class="carousel-control prev" onclick="prevSlide('.service-article')">&#10094;</button>
+          <button type="button" class="carousel-control next" onclick="nextSlide('.service-article')">&#10095;</button>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 id="projects-title">Projets</h1>
+      <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item project-article">
+              <div class="content">
+                <img src="https://picsum.photos/147/147">
+                <h2>Title 1</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
+                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
+                  gravida molestie..
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item project-article">
+              <div class="content">
+                <img src="https://picsum.photos/147/147">
+                <h2>Title 2</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
+                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
+                  gravida molestie..
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item project-article">
+              <div class="content">
+                <img src="https://picsum.photos/147/147">
+                <h2>Title 3</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
+                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
+                  gravida molestie..
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item project-article">
+              <div class="content">
+                <img src="https://picsum.photos/147/147">
+                <h2>Title 4</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
+                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
+                  gravida molestie..
+                </p>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="carousel-control prev" onclick="prevSlide('.project-article')">&#10094;</button>
+          <button type="button" class="carousel-control next" onclick="nextSlide('.project-article')">&#10095;</button>
+      </div>
+    </section>
+    <section id="contact">
+      <div>
+        <h1>Coordonées</h1>
+        <h2>N'hésitez pas à me contacter pour me parler de vos projets !</h2>
+      </div>
+      <div>
+        <div class="contact-info">
+          <img src="" alt="">
+          <p>+33 7 89 43 89 95</p>
+        </div>
+        <div class="contact-info">
+          <img src="" alt="">
+          <p>lucas@overtake.studio</p>
+        </div>
+        <div class="contact-info">
+          <img src="" alt="">
+          <p>64 bis rue de l'ermitage, 18130 Dun-sur-Auron</p>
+        </div>
+      </div>
+      <div>
+        <img src="" alt="">
+        <img src="" alt="">
       </div>
     </section>
   </main>

@@ -108,7 +108,7 @@
     display: none;
   }
 
-  .carousel-inner {
+  #services .carousel-inner, #projects .carousel-inner {
     width: 100vw;
     transform: none!important;
   }

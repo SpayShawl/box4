@@ -1,7 +1,7 @@
 let currentIndex = 0;
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
+function showSlide(index, elem) {
+    const slides = document.querySelectorAll(elem);
     if (index >= slides.length) {
         currentIndex = 0;
     } else if (index < 0) {
@@ -9,14 +9,14 @@ function showSlide(index) {
     } else {
         currentIndex = index;
     }
-    const offset = -currentIndex * 33.333333;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    const offset = -currentIndex * (100 / slides.length);
+    slides[0].parentNode.style.transform = `translateX(${offset}%)`;
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
+function nextSlide(elem) {
+    showSlide(currentIndex + 1, elem);
 }
 
-function prevSlide() {
-    showSlide(currentIndex - 1);
+function prevSlide(elem) {
+    showSlide(currentIndex - 1, elem);
 }

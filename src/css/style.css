@@ -181,10 +181,50 @@ header {
 }
 /* ENREGION Profile */
 
+/* REGION CARROUSEL */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content p {
+  margin: 0;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+/* ENDREGION CARROUSEL */
+
 /* REGION Services */
 #services {
   position: relative;
-  min-height: 100dvh;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  overflow: hidden;
 }
 
 #services::before {
@@ -198,63 +238,75 @@ header {
   filter: brightness(0.25);
   z-index: -1;
 }
-/* ENDREGION Services */
 
-.carousel {
-  position: relative;
-  overflow: hidden;
+#services-title {
+  align-self: center;
+  color: #FF0016;
+  margin-top: 2em;
 }
 
-.carousel-inner {
-  display: flex;
+#services .carousel-inner {
   width: 300dvw;
-  transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-  width: 100dvw;
-  height: 100dvh;
-  margin: 5%;
-}
-
-.content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#services .content {
   color: white;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.content img {
+#services .content img {
   border-radius: 50%;
 }
 
-.content h2 {
+#services .content h2 {
   color: #FF0016;
   margin: 1em;
 }
 
-.content p {
-  margin: 0;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  border: none;
+#services .carousel-control {
   color: white;
-  font-size: 24px;
-  cursor: pointer;
 }
 
-.carousel-control.prev {
-  left: 10px;
+#services .carousel-item {
+  margin: 0 5%;
+}
+/* ENDREGION Services */
+
+/* REGION Projects */
+#projects {
+  background-color: #F5F7F8;
+  position: relative;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  overflow: hidden;
 }
 
-.carousel-control.next {
-  right: 10px;
+#projects .carousel-inner {
+  width: 400dvw;
 }
+
+#projects-title {
+  align-self: center;
+  margin-top: 2em;
+}
+
+/* ENDREGION Projects */
+
+/* REGION Contact */
+#contact {
+  height: 100dvh;
+  background: linear-gradient(328.05deg, #FF0016 16.71%, #FF5463 112.48%);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+}
+/* ENDREGION Contact */
