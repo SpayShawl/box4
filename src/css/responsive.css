@@ -44,6 +44,10 @@
   .content p {
     font-size: 18px;
   }
+
+  #informations {
+    gap: 3em;
+  }
 }
 
 /* REGION Tablet Landscape */
