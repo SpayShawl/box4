@@ -24,10 +24,6 @@
     animation: none;
   }
 
-  #profile {
-    margin: 5em 3em;
-  }
-
   .carousel-control.prev {
     left: 2em;
   }
@@ -95,7 +91,6 @@
   }
 
   #profile {
-    margin: 5em;
     text-align: left;
   }
 
@@ -108,7 +103,7 @@
     display: none;
   }
 
-  #services .carousel-inner, #projects .carousel-inner {
+  #services .carousel-inner {
     width: 100vw;
     transform: none!important;
   }
@@ -133,6 +128,14 @@
   .carousel-control {
     display: none;
   }
+
+  .projects-card {
+    width: 360px;
+  }
+
+  iframe {
+    display: block;
+  }
 }
 
 /* REGION Large Desktop */
@@ -140,10 +143,6 @@
   #header-title {
     font-size: 85px;
     line-height: 115px;
-  }
-
-  #profile {
-    margin: 5em 10em;
   }
 
   .content img {

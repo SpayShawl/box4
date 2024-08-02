@@ -5,15 +5,10 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   overflow-x: hidden
-}
-
-header {
-  margin: 0;
 }
 
 /* REGION Header */
@@ -162,18 +157,29 @@ header {
 }
 /* ENREGION Sponsor */
 
-/* EGION Profile */
+/* REGION Profile */
 #profile {
+  min-height: 100dvh;
   display: flex;
   gap: 2em;
   text-align: center;
-  margin: 0 1em 10em 1em;
+  margin: 0 7%;
+}
+
+#profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#profile-content, #large-portrait {
+  margin: 10% 0;
 }
 
 #profile-title {
-  margin-bottom: 1em;
   font-size: 24px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 #large-portrait {
@@ -191,10 +197,6 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.content p {
-  margin: 0;
 }
 
 .carousel-control {
@@ -219,7 +221,7 @@ header {
 /* REGION Services */
 #services {
   position: relative;
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100dvw;
   display: flex;
   flex-direction: column;
@@ -241,8 +243,15 @@ header {
 
 #services-title {
   align-self: center;
+  margin: 2em 0 2em 0;
   color: #FF0016;
-  margin-top: 2em;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#services .carousel {
+  margin-bottom: 10%;
 }
 
 #services .carousel-inner {
@@ -262,7 +271,9 @@ header {
 
 #services .content h2 {
   color: #FF0016;
+  font-weight: 600;
   margin: 1em;
+  text-transform: uppercase;
 }
 
 #services .carousel-control {
@@ -278,21 +289,48 @@ header {
 #projects {
   background-color: #F5F7F8;
   position: relative;
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  gap: 3%;
-  overflow: hidden;
 }
 
-#projects .carousel-inner {
-  width: 400dvw;
-}
-
-#projects-title {
+#projects h1{
   align-self: center;
-  margin-top: 2em;
+  margin: 5% 0;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 5% 5% 5%;
+  gap: 2em;
+}
+
+.projects-card {
+  width: 260px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.projects-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.projects-card h2, .projects-card p {
+  margin: 1em;
+}
+
+.projects-card h2 {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* ENDREGION Projects */
@@ -302,11 +340,73 @@ header {
   height: 100dvh;
   background: linear-gradient(328.05deg, #FF0016 16.71%, #FF5463 112.48%);
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#informations {
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
   color: white;
 }
 
-.contact-info {
+#contact-title, #contact-info, #contact-social {
+  margin: 0 7%;
+}
+
+#contact-title h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+#contact-title h2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#contact-info {
   display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#contact-phone, #contact-mail, #contact-location {
+  display: flex;
+  gap: 1.5em;
+  margin: 1em 0;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+#contact-social {
+  display: flex;
+  gap: 1.5em;
+}
+
+iframe {
+  display: none;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  width: 600px;
+  height: 450px;
 }
 /* ENDREGION Contact */
+
+footer {
+  height: 150px;
+  display: flex;
+  background-color: #323537;
+}
+
+footer img {
+  width: 190px;
+  align-self: center;
+  margin: 7%;
+}

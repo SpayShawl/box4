@@ -24,6 +24,7 @@
   <meta property="twitter:image" content="https://i.postimg.cc/tRKwykt5/bckg-header.webp" />
   
   <link rel="icon" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
@@ -31,7 +32,7 @@
   <header>
     <div id="flx-header">
       <video autoplay muted loop id="backgound-video">
-        <source src="assets/moto.mp4" type="video/mp4">
+        <source src="assets/back_video.mp4" type="video/mp4">
       </video>
       <img id="logo" src="assets/logo.svg" alt="Logo de Overtake">
       <h1 id="header-title">Passez<br>à la <span class="red">vitesse</span><br>supérieure</h1>
@@ -59,7 +60,7 @@
     -->
     <section id="profile">
       <img id="large-portrait" src="https://picsum.photos/480/713" alt="Lucas's portrait">
-      <div>
+      <div id="profile-content">
         <h1 id="profile-title">Overtake / Lucas Meunier</h1>
         <img id="small-portrait" src="https://picsum.photos/174/174" alt="Lucas's portrait">
         <p class="profile-description">
@@ -121,83 +122,75 @@
       </div>
     </section>
     <section id="projects">
-      <h1 id="projects-title">Projets</h1>
-      <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item project-article">
-              <div class="content">
-                <img src="https://picsum.photos/147/147">
-                <h2>Title 1</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
-                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
-                  gravida molestie..
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item project-article">
-              <div class="content">
-                <img src="https://picsum.photos/147/147">
-                <h2>Title 2</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
-                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
-                  gravida molestie..
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item project-article">
-              <div class="content">
-                <img src="https://picsum.photos/147/147">
-                <h2>Title 3</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
-                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
-                  gravida molestie..
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item project-article">
-              <div class="content">
-                <img src="https://picsum.photos/147/147">
-                <h2>Title 4</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque  imperdiet lorem eu augue eleifend, 
-                  quis egestas mauris congue. Nam ac  luctus mauris, id aliquam nulla. Pellentesque condimentum aliquam nunc  
-                  gravida molestie..
-                </p>
-              </div>
-            </div>
-          </div>
-          <button type="button" class="carousel-control prev" onclick="prevSlide('.project-article')">&#10094;</button>
-          <button type="button" class="carousel-control next" onclick="nextSlide('.project-article')">&#10095;</button>
+      <h1>Projets</h1>
+      <div id="projects-cards">
+        <article class="projects-card">
+          <img src="https://picsum.photos/147/147">
+          <h2>Title 1</h2>
+          <p>UI, Art drection</p>
+        </article>
+        <article class="projects-card">
+          <img src="https://picsum.photos/147/147">
+          <h2>Title 2</h2>
+          <p>UI, Art drection</p>
+        </article>
+        <article class="projects-card">
+          <img src="https://picsum.photos/147/147">
+          <h2>Title 3</h2>
+          <p>UI, Art drection</p>
+        </article>
+        <article class="projects-card">
+          <img src="https://picsum.photos/147/147">
+          <h2>Title 4</h2>
+          <p>UI, Art drection</p>
+        </article>
+        <article class="projects-card">
+          <img src="https://picsum.photos/147/147">
+          <h2>Title 5</h2>
+          <p>UI, Art drection</p>
+        </article>
+        <article class="projects-card">
+          <img src="https://picsum.photos/147/147">
+          <h2>Title 6</h2>
+          <p>UI, Art drection</p>
+        </article>
       </div>
     </section>
     <section id="contact">
-      <div>
-        <h1>Coordonées</h1>
-        <h2>N'hésitez pas à me contacter pour me parler de vos projets !</h2>
-      </div>
-      <div>
-        <div class="contact-info">
-          <img src="" alt="">
-          <p>+33 7 89 43 89 95</p>
+      <div id="informations">
+        <div id="contact-title">
+          <h1>Coordonées</h1>
+          <h2>N'hésitez pas à me contacter pour me parler<br> de vos projets !</h2>
         </div>
-        <div class="contact-info">
-          <img src="" alt="">
-          <p>lucas@overtake.studio</p>
+        <div id="contact-info">
+          <div id="contact-phone">
+            <img src="assets/contact/phone.svg" alt="Phone icon">
+            <a class="contact-link" href="tel:+33789438995">+33 7 89 43 89 95</a>
+          </div>
+          <div id="contact-mail">
+            <img src="assets/contact/email.svg" alt="Email icon">
+            <a class="contact-link" href= "mailto: lucas@overtake.studio">lucas@overtake.studio</a>
+          </div>
+          <div id="contact-location">
+            <img src="assets/contact/location.svg" alt="Location pin icon">
+            <p>64 bis rue de l'ermitage,<br>18130 Dun-sur-Auron</p>
+          </div>
         </div>
-        <div class="contact-info">
-          <img src="" alt="">
-          <p>64 bis rue de l'ermitage, 18130 Dun-sur-Auron</p>
+        <div id="contact-social">
+          <a href=""><img src="assets/contact/instagram.svg" alt="Instagram icon"></a>
+          <a href=""><img src="assets/contact/linkedin.svg" alt="Linkedin icon"></a>
         </div>
       </div>
-      <div>
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.6304606355034!2d2.571022775962264!3d46.890318071133045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fa83c0d644e9fb%3A0xf3cbb2fd4c7d5d2d!2s64%20Rue%20de%20l&#39;Ermitage%2C%2018130%20Dun-sur-Auron!5e0!3m2!1sfr!2sfr!4v1722580460147!5m2!1sfr!2sfr" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
   </main>
 </body>
+<footer>
+  <img src="assets/logo-white.svg" alt="Logo de Overtake">
+</footer>
 <script src="src/js/script.js"></script>
 </html>
