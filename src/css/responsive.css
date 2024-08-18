@@ -77,6 +77,10 @@
   #small-portrait {
     height: 348px;
   }
+
+  #services .content img {
+    width: 225px;
+  }
 }
 
 /* REGION Desktop */
@@ -107,18 +111,8 @@
     display: none;
   }
 
-  #services .carousel-inner {
-    width: 100vw;
-    transform: none!important;
-  }
-
-  .carousel-control {
-    display: none;
-  }
-
   .content img {
-    width: 222px;
-    height: 222px;
+    width: 300px;
   }
   
   .content h2 {
@@ -130,7 +124,15 @@
   }
 
   .carousel-control {
-    display: none;
+    font-size: 32px;
+  }
+
+  .carousel-control.prev {
+    left: 2em;
+  }
+  
+  .carousel-control.next {
+    right: 2em;
   }
 
   .projects-card {

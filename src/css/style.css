@@ -60,7 +60,7 @@ body {
 }
 
 #header-title .red {
-  color: #FF0016;
+  color: #DFF500;
 }
 
 #flx-anchor {
@@ -73,7 +73,7 @@ body {
 
 #flx-anchor a {
   border-radius: 25px;
-  border: 2px solid #FF0016;
+  border: 2px solid #DFF500;
   background-color: transparent;
   width: 33%;
   padding: 0.5em;
@@ -81,7 +81,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: #FF0016;
+  color: #DFF500;
   font-weight: 400;
   cursor: pointer;
   transition: all 250ms ease;
@@ -89,7 +89,7 @@ body {
 
 #flx-anchor a:hover {
   color: white;
-  background-color: #FF0016;
+  background-color: #DFF500;
 }
 
 #flx-anchor .arrow {
@@ -129,7 +129,7 @@ body {
 }
 
 #sponsor {
-  background-color: #FF0016;
+  background-color: #DFF500;
   padding: 0.5em 2em;
   overflow-x: hidden;
 }
@@ -246,7 +246,7 @@ body {
 #services-title {
   align-self: center;
   margin: 2em 0 2em 0;
-  color: #FF0016;
+  color: #DFF500;
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
@@ -257,7 +257,12 @@ body {
 }
 
 #services .carousel-inner {
-  width: 300dvw;
+  width: 400dvw;
+}
+
+#services .carousel-item {
+  width: 100dvw;
+  padding: 0 5%;
 }
 
 #services .content {
@@ -267,23 +272,19 @@ body {
   align-items: center;
 }
 
-#services .content img {
-  border-radius: 50%;
-}
-
 #services .content h2 {
-  color: #FF0016;
+  color: #DFF500;
   font-weight: 600;
   margin: 1em;
   text-transform: uppercase;
 }
 
-#services .carousel-control {
-  color: white;
+#services .content img {
+  width: 150px;
 }
 
-#services .carousel-item {
-  margin: 0 5%;
+#services .carousel-control {
+  color: white;
 }
 /* ENDREGION Services */
 
@@ -317,6 +318,13 @@ body {
   width: 260px;
   background-color: white;
   border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  transition: all 250ms ease;
+}
+
+.projects-card:hover {
+  transform: scale(1.05);
 }
 
 .projects-card img {
@@ -340,7 +348,7 @@ body {
 /* REGION Contact */
 #contact {
   min-height: 100dvh;
-  background: linear-gradient(328.05deg, #FF0016 16.71%, #FF5463 112.48%);
+  background: linear-gradient(328.05deg, #DFF500 16.71%, #D6E34D 112.48%);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -351,7 +359,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: white;
+  color: black;
 }
 
 #contact-title, #contact-info, #contact-social {
@@ -383,7 +391,7 @@ body {
 }
 
 .contact-link {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
