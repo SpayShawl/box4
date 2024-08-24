@@ -48,6 +48,14 @@
   #informations {
     gap: 3em;
   }
+
+  footer {
+    justify-content: space-between;
+  }
+
+  footer p {
+    margin: 2em 7%;
+  }
 }
 
 /* REGION Tablet Landscape */

@@ -421,13 +421,20 @@ iframe {
 /* ENDREGION Contact */
 
 footer {
-  height: 150px;
+  min-height: 150px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #323537;
 }
 
 footer img {
   width: 190px;
-  align-self: center;
-  margin: 7%;
+  margin: 2em 7%;
+}
+
+footer p {
+  margin: 0 2em 7%;
+  color: white;
 }
