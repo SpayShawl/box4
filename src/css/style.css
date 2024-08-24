@@ -199,6 +199,16 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.skills h3 {
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+.skills li {
+  margin: 0.25em 0;
 }
 
 .carousel-control {
@@ -267,7 +277,6 @@ body {
 
 #services .content {
   color: white;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -275,7 +284,7 @@ body {
 #services .content h2 {
   color: #DFF500;
   font-weight: 600;
-  margin: 1em;
+  margin: 1em 0 0.5em 0;
   text-transform: uppercase;
 }
 
@@ -386,6 +395,7 @@ body {
 
 #contact-phone, #contact-mail, #contact-location {
   display: flex;
+  align-items: center;
   gap: 1.5em;
   margin: 1em 0;
 }

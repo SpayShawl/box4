@@ -135,6 +135,10 @@
     right: 2em;
   }
 
+  .skills {
+    width: 50%;
+  }
+
   .projects-card {
     width: 360px;
   }
