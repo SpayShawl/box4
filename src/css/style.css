@@ -171,6 +171,7 @@ body {
 #profile-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2em;
 }
 
@@ -186,6 +187,10 @@ body {
 
 #large-portrait {
   display: none;
+}
+
+#small-portrait {
+  width: 174px;
 }
 /* ENREGION Profile */
 

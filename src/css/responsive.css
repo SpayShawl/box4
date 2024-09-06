@@ -83,7 +83,7 @@
   }
 
   #small-portrait {
-    height: 348px;
+    height: 260px;
   }
 
   #services .content img {
@@ -112,7 +112,7 @@
 
   #large-portrait {
     display: block;
-    height: 75%;
+    width: 480px;
   }
 
   #small-portrait {
@@ -175,6 +175,4 @@
   .content p {
     font-size: 20px;
   }
-
 }
-
